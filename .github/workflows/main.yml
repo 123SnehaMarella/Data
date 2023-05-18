@@ -1,8 +1,8 @@
 name: Install dependencies
-  working-directory: path/to/playwright/folder
+  working-directory: C:\Users\t-nmarella\Desktop\play
   run: npm ci
  name: Run Playwright tests
-  working-directory: path/to/playwright/folder 
+  working-directory: C:\Users\t-nmarella\Desktop\play
   env:
     PLAYWRIGHT_SERVICE_ACCESS_KEY: ${{secrets.PLAYWRIGHT_SERVICE_ACCESS_KEY}}
   run: npx playwright test -c playwright.service.config.ts --workers=20
